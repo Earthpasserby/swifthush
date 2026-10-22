@@ -1,5 +1,18 @@
 import React from 'react';
-import { ArrowUpRight, BellRing, History, LocateFixed, ShieldCheck } from 'lucide-react';
+import { ArrowUpRight, BellRing, CircleStop, Gauge, History, LocateFixed, MapPin, Mic, Power, Radio, ShieldAlert, ShieldCheck, Smartphone } from 'lucide-react';
+
+const majorFeatures = [
+  { icon: MapPin, title: 'Real-time GPS tracking' },
+  { icon: Mic, title: 'Voice monitoring' },
+  { icon: MapPin, title: 'Geo-fencing alerts' },
+  { icon: Power, title: 'Engine ON/OFF status' },
+  { icon: Gauge, title: 'Overspeed alerts' },
+  { icon: History, title: 'Playback history' },
+  { icon: CircleStop, title: 'Remote engine stop / resume' },
+  { icon: Radio, title: 'Anti-jamming configuration' },
+  { icon: ShieldAlert, title: 'Tamper protection' },
+  { icon: Smartphone, title: 'Full control via mobile app and server' },
+];
 
 const services = [
   {
@@ -54,6 +67,20 @@ function ServiceSection({ onQuote }) {
             <ArrowUpRight aria-hidden="true" className="service-arrow" size={17} />
           </article>
         ))}
+      </div>
+      <div aria-labelledby="features-title" className="major-features">
+        <div className="major-features-heading">
+          <span className="section-kicker">BUILT FOR EVERYDAY CONTROL</span>
+          <h3 id="features-title">Major features</h3>
+        </div>
+        <ul className="major-features-list">
+          {majorFeatures.map(({ icon: Icon, title }) => (
+            <li key={title}>
+              <Icon aria-hidden="true" size={18} strokeWidth={1.8} />
+              <span>{title}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

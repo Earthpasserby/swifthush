@@ -6,12 +6,12 @@ function AboutSection() {
     <section aria-labelledby="about-title" className="about-section" id="about">
       <div className="about-image-wrap">
         <img
-          alt="A car travelling through the city"
+          alt="Portrait of the SwiftHush CEO"
           className="about-image"
           loading="lazy"
-          src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1500&q=85"
+          src="/PImg.jpeg"
         />
-        <div className="about-image-caption"><span>BE IN CHARGE</span><span>of your automobile.</span></div>
+        <div className="about-image-caption"><span>THE FACE BEHIND SWIFTHUSH</span><span>CEO, SwiftHush</span></div>
       </div>
       <div className="about-copy">
         <span className="section-kicker">A LITTLE ABOUT US</span>

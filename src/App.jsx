@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SiteHeader from './components/SiteHeader.jsx';
 import Hero from './components/Hero.jsx';
 import ServiceSection from './components/ServiceSection.jsx';
+import ClientsSection from './components/ClientsSection.jsx';
 import TrackerSection from './components/TrackerSection.jsx';
 import AboutSection from './components/AboutSection.jsx';
 import ProcessSection from './components/ProcessSection.jsx';
@@ -25,6 +26,7 @@ function App() {
           <span><i /> Support that stays close</span>
         </div>
         <ServiceSection onQuote={() => setQuoteOpen(true)} />
+        <ClientsSection />
         <TrackerSection />
         <AboutSection />
         <ProcessSection />
