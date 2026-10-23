@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, MessageCircle } from 'lucide-react';
+import { ArrowUpRight, Facebook, Instagram, MessageCircle, Music2 } from 'lucide-react';
 
 function SiteFooter({ onQuote }) {
   return (
@@ -13,6 +13,12 @@ function SiteFooter({ onQuote }) {
         </div>
         <div className="footer-links-group"><span>EXPLORE</span><a href="#solutions">Solutions</a><a href="#how-it-works">How it works</a><a href="#about">About SwiftHush</a></div>
         <div className="footer-links-group"><span>GET IN TOUCH</span><a href="#contact">Contact</a><button onClick={onQuote} type="button">Request a quote <ArrowUpRight size={13} /></button><a href="https://wa.me/2348134225352" rel="noreferrer" target="_blank"><MessageCircle size={13} /> WhatsApp</a></div>
+        <div className="footer-links-group footer-socials">
+          <span>FOLLOW SWIFTHUSH</span>
+          <a href="https://www.instagram.com/swifthushcartrackers" rel="noreferrer" target="_blank"><Instagram size={15} /> Instagram</a>
+          <a href="https://www.facebook.com/Swifthush-Trackers" rel="noreferrer" target="_blank"><Facebook size={15} /> Swifthush-Trackers</a>
+          <a href="https://www.tiktok.com/@swifthushcartrackers" rel="noreferrer" target="_blank"><Music2 size={15} /> TikTok</a>
+        </div>
       </div>
       <div className="footer-bottom"><span>© {new Date().getFullYear()} SwiftHush. All rights reserved.</span><a href="#home">Back to top ↑</a><span>Built for the road ahead.</span></div>
     </footer>

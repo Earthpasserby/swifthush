@@ -11,7 +11,7 @@ function AboutSection() {
           loading="lazy"
           src="/PImg.jpeg"
         />
-        <div className="about-image-caption"><span>THE FACE BEHIND SWIFTHUSH</span><span>CEO, SwiftHush</span></div>
+        <div className="about-image-caption"><span>CEO, SWIFTHUSH</span><span>Kingsley Echeta</span></div>
       </div>
       <div className="about-copy">
         <span className="section-kicker">A LITTLE ABOUT US</span>

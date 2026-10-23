@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, BellRing, CircleStop, Gauge, History, LocateFixed, MapPin, Mic, Power, Radio, ShieldAlert, ShieldCheck, Smartphone } from 'lucide-react';
+import { ArrowUpRight, BellRing, Camera, CircleStop, Gauge, History, LocateFixed, MapPin, Mic, Power, Radio, ShieldAlert, ShieldCheck, Smartphone } from 'lucide-react';
 
 const majorFeatures = [
   { icon: MapPin, title: 'Real-time GPS tracking' },
@@ -12,6 +12,8 @@ const majorFeatures = [
   { icon: Radio, title: 'Anti-jamming configuration' },
   { icon: ShieldAlert, title: 'Tamper protection' },
   { icon: Smartphone, title: 'Full control via mobile app and server' },
+  { icon: Camera, title: 'Dashboard cameras' },
+  { icon: Gauge, title: 'Speed limiters' },
 ];
 
 const services = [
